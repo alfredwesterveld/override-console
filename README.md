@@ -4,7 +4,7 @@ Will override console so that it will also show line number. This is especially 
 
 ## installing
 
-```
+```bash
 npm i @alfredwesterveld/override-console
 ```
 
@@ -22,7 +22,7 @@ exports.handler = function(event, context, callback) {
 Then in Cloudwatch it would output something like:
 
 ```
-	start lambda - /var/task/index.js:53:17
+start lambda - /var/task/index.js:53:17
 ```
 
 ## Acknowledgement
