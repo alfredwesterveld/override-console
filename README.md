@@ -9,14 +9,18 @@ npm i @alfredwesterveld/override-console
 ```
 
 ## Usage
-But inside Lambda handler I use it like:
-```
+
+Inside AWS(node) Lambda handler (I) use it like:
+
+```javascript
 exports.handler = function(event, context, callback) {
-    require('@alfredwesterveld/override-console');
-    // console.log('start lambda') => Not needed but used in example below
+    require('@alfredwesterveld/override-console'); // Need to be first line inside handler
+    console.log('start lambda'); // Will output like
+}
 ````
 
 Then in Cloudwatch it would output something like:
+
 ```
 	start lambda - /var/task/index.js:53:17
 ```
